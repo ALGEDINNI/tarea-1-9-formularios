@@ -11,11 +11,11 @@
     <!-- fieldset: agrupa los campos del formulario -->
     <fieldset>
         <!-- legend: es el título del grupo -->
-        <legend>Creación de formulario by Alejandro</legend>
+        <legend>Datos Personales by Alejandro</legend>
         
-<!-- label: el etiqueta del campo ; for: el ID del campo -->
+<!-- label: texto que describe un campo; al pulsarlo se selecciona el campo ; for: indica el id del campo al que va unida la etiqueta -->
 <label for="nombre">Nombre:</label>
-<!-- input: el campo de entrada ; type: el tipo de campo ; text: el texto inicial ; id: el ID del campo ; name: el nombre del campo ;
+<!-- input: el campo de entrada ; type: el tipo de campo ; text: campo para escribir una línea de texto ; id: identificador único del elemento en la página ; name: nombre con el que se envía el dato ;
      placeholder: el texto de ayuda ; required: indica que es obligatorio ; autofocus: se enfoca automáticamente ; size: el tamaño ; maxlength: la longitud máxima -->
 <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre"
        required autofocus size="30" maxlength="40">
@@ -51,14 +51,11 @@
 <input type="text" id="curso" name="curso" value="2026-27" readonly>
 <br>
 
-<!-- disabled: indica que el campo está deshabilitado -->
+<!-- disabled: indica que el campo está deshabilitado y no se envía -->
 <label for="centro">Centro:</label>
 <input type="text" id="centro" name="centro" value="IES La Asunción" disabled>
 <br>
-
-    </fieldset>
-        </fieldset>   <!-- este es el cierre del primer fieldset -->
-
+        
     <fieldset>
         <legend>Preferencias</legend>
 
@@ -134,13 +131,12 @@
 <br>
 
     </fieldset>
-        </fieldset>   <!-- cierre del segundo fieldset -->
-
+       
     <!-- submit: es un botón para enviar el formulario -->
     <input type="submit" value="Enviar">
     <!-- reset: es un botón para borrar los valores del formulario -->
     <input type="reset" value="Borrar">
-    <!-- button (tipo de input): es un botón genérico -->
+    <!-- button (tipo de input): es un botón genérico que no hace nada por sí solo -->
     <input type="button" value="No hago nada">
     <!-- image: es un botón de imagen ; src: la ruta de la imagen ; alt: el texto alternativo -->
     <input type="image" name="imagen" src="boton_env.png" alt="Enviar formulario" width="60">
@@ -151,11 +147,35 @@
     <button type="reset">Borrar</button>
     <button type="button">No hago nada</button>
 
-</form>   <!-- cierre del form -->
+</form>  
 
-
-</form>   <!-- el cierre del form -->
+<form action="https://es.wikipedia.org/w/index.php" method="get">
+    <!-- search: es un campo para ingresar texto de búsqueda ; list: es el id del datalist -->
+    <label for="busqueda">Buscar en Wikipedia:</label>
+    <input type="search" id="busqueda" name="search" list="sugerencias">
+    <!-- datalist: es una lista de sugerencias para el campo de búsqueda -->
+    <datalist id="sugerencias">
+        <option value="Formulario web">
+        <option value="HTML">
+        <option value="Protocolo de transferencia de hipertexto">
+    </datalist>
+    <button type="submit">Buscar</button>
 </form>
-    
+
+<form action="https://www.openstreetmap.org/search" method="get">
+    <label for="ciudad">Elige una ciudad:</label>
+    <select id="ciudad" name="query">
+        <optgroup label="Alicante">
+            <option value="Elche">Elche</option>
+            <option value="Alcoy">Alcoy</option>
+        </optgroup>
+        <optgroup label="Valencia">
+            <option value="Gandía">Gandía</option>
+            <option value="Xàtiva">Xàtiva</option>
+        </optgroup>
+    </select>
+    <button type="submit">Ver en el mapa</button>
+</form>
+
 </body>
 </html>
