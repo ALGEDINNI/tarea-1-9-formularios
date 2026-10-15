@@ -11,7 +11,7 @@
     <!-- fieldset: agrupa los campos del formulario -->
     <fieldset>
         <!-- legend: es el título del grupo -->
-        <legend>Datos Personales by Alejandro</legend>
+        <legend>Datos personales by Alejandro</legend>
         
 <!-- label: texto que describe un campo; al pulsarlo se selecciona el campo ; for: indica el id del campo al que va unida la etiqueta -->
 <label for="nombre">Nombre:</label>
@@ -46,7 +46,7 @@
 <input type="file" id="foto" name="foto">
 <br>
 
-<!-- value: el valor inicial ; readonly: indica que el campo no se puede modificar -->
+<!-- value: el valor inicial ; readonly: indica que el campo no se puede modificar, pero su dato se envía -->
 <label for="curso">Curso:</label>
 <input type="text" id="curso" name="curso" value="2026-27" readonly>
 <br>
@@ -55,6 +55,8 @@
 <label for="centro">Centro:</label>
 <input type="text" id="centro" name="centro" value="IES La Asunción" disabled>
 <br>
+
+</fieldset>
         
     <fieldset>
         <legend>Preferencias</legend>
@@ -175,6 +177,16 @@
         </optgroup>
     </select>
     <button type="submit">Ver en el mapa</button>
+</form>
+<form action="https://validator.w3.org/nu/" method="get">
+    <!-- url: campo donde se introduce una dirección web -->
+    <label for="direccion">Dirección de mi web:</label>
+    <input type="url" id="direccion" name="doc" value="https://algedinni.github.io/tarea-1-9-formularios/">
+    <br>
+    <input type="checkbox" id="codigo" name="showsource" value="yes">
+    <label for="codigo">Ver el código</label>
+    <br>
+    <button type="submit">Validar</button>
 </form>
 
 </body>
