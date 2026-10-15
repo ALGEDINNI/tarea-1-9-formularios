@@ -111,6 +111,28 @@
 <input type="month" id="mes" name="mes">
 <br>
 
+<!-- select: es un campo para seleccionar una opción ; multiple: permite seleccionar múltiples opciones -->
+<label for="modulos">Módulos:</label>
+<select id="modulos" name="modulos" multiple>
+    <!-- optgroup: es un grupo de opciones ; label: el nombre del grupo -->
+    <optgroup label="Primer curso">
+        <!-- option: es una opción dentro del grupo ; selected: indica que está seleccionada -->
+
+        <option value="marcas" selected>Lenguaje de marcas</option>
+        <option value="programacion">Programación</option>
+    </optgroup>
+    <optgroup label="Segundo curso">
+        <option value="cliente">Desarrollo web en entorno cliente</option>
+        <option value="servidor">Desarrollo web en entorno servidor</option>
+    </optgroup>
+</select>
+<br>
+
+<!-- textarea: es un campo para ingresar texto multilinea ; rows: el número de filas ; cols: el número de columnas -->
+<label for="comentarios">Comentarios:</label>
+<textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea>
+<br>
+
     </fieldset>
 </form>   <!-- el cierre del form -->
 </form>
