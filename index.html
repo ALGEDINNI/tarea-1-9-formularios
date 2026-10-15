@@ -57,6 +57,31 @@
 <br>
 
     </fieldset>
+        </fieldset>   <!-- este es el cierre del primer fieldset -->
+
+    <fieldset>
+        <legend>Preferencias</legend>
+
+        Turno:
+        <!-- radio: es un campo que permite seleccionar una sola opción -->
+        <input type="radio" id="manana" name="turno" value="manana">
+        <label for="manana">Mañana</label>
+        <input type="radio" id="tarde" name="turno" value="tarde">
+        <label for="tarde">Tarde</label>
+        <br>
+
+        Intereses:
+        <!-- checkbox: es un campo que permite seleccionar múltiples opciones -->
+        <input type="checkbox" id="programacion" name="intereses" value="programacion">
+        <label for="programacion">Programación</label>
+        <input type="checkbox" id="redes" name="intereses" value="redes">
+        <label for="redes">Redes</label>
+        <input type="checkbox" id="disenyo" name="intereses" value="disenyo">
+        <label for="disenyo">Diseño web</label>
+        <br>
+
+    </fieldset>
+</form>   <!-- el cierre del form -->
 </form>
     
 </body>
